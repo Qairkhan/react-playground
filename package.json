@@ -27,8 +27,10 @@
   },
   "homepage": "https://github.com/Qairkhan/react-playground#readme",
   "dependencies": {
+    "@material-ui/core": "^4.9.8",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "typeface-roboto": "0.0.75"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
