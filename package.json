@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --open",
+    "build": "webpack",
+    "lint" : "eslint." , 
+    "lint: fix" : "eslint --fix." 
   },
   "repository": {
     "type": "git",
@@ -26,12 +29,9 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
+    "eslint": "^6.8.0",
     "html-webpack-plugin": "^4.0.3",
     "webpack": "^4.42.1",
     "webpack-dev-server": "^3.10.3"
-  },
-  "scripts": {
-    "start": "webpack-dev-server --open",
-    "build": "webpack"
   }
 }
