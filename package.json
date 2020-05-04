@@ -6,13 +6,13 @@
   "scripts": {
     "start": "webpack-dev-server --open --watch",
     "build": "webpack",
-    "lint": "eslint.",
-    "lint: fix": "eslint --fix.",
+    "lint": "eslint ./src",
+    "lint:fix": "npm run lint -- --fix",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run format"
+      "pre-push": "npm run lint && npm run format"
     }
   },
   "repository": {
@@ -43,6 +43,8 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.20.2",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.0.3",
     "husky": "^4.2.3",
